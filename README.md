@@ -67,27 +67,27 @@ API: To fetch nutritional food recipes and exercises:
 
 #### Home Page
 
-![landing page](https://github.com/farheen-syed1/NourishHer/assets/168995397/24af0125-cf01-4d4f-8fa5-de2a22ce516f)
+![landing page]
 
 #### Exercise Page
 
-![Exercise Page](https://github.com/farheen-syed1/NourishHer/assets/168995397/34fd0aa1-5a40-45d5-87a7-e75c5eaf2445)
+![Exercise Page]
 
 #### Footer
 
-![footer](https://github.com/farheen-syed1/NourishHer/assets/168995397/8601734a-f999-452e-887d-99d7fe8c9f4d)
+![footer]
 
 #### User Schema
 
-![userschema](https://github.com/farheen-syed1/NourishHer/assets/168995397/ed8b8ff8-e725-485b-8e26-49b8148a0236)
+![userschema]
 
 #### Recipe Schema
 
-![recipeschema](https://github.com/farheen-syed1/NourishHer/assets/168995397/e13fa9d3-185a-4aa3-aeb0-512c5852fa50)
+![recipeschema]
 
 #### Exercise Schema
 
-![exerciseschema](https://github.com/farheen-syed1/NourishHer/assets/168995397/462516a7-adc7-4342-b3d5-b59aaa8150e8)
+![exerciseschema]
 
 - User: { id, name, email, password, age, fitness_details }
 - Meal: { id, user_id, date, name, calories, protein, carbohydrates ,steps how to make it},
