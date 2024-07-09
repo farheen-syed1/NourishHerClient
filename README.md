@@ -64,30 +64,38 @@ API: To fetch nutritional food recipes and exercises:
 #### Navbar
 
 ![Navbar.png]
+![Navbar](https://github.com/farheen-syed1/NourishHerClient/assets/168995397/4a226886-82c0-4ce4-a1b9-1c59982ee3e3)
 
 #### Home Page
 
 ![landingpage.png]
+![landingpage](https://github.com/farheen-syed1/NourishHerClient/assets/168995397/95652984-dd58-4e43-af79-69a0aa01f1fa)
 
 #### Exercise Page
 
 ![exercisepage.png]
+![exercisepage](https://github.com/farheen-syed1/NourishHerClient/assets/168995397/eebe292a-c776-495c-83d4-039b8d82ba02)
 
 #### Footer
 
 ![footer.png]
+![footer](https://github.com/farheen-syed1/NourishHerClient/assets/168995397/5db1b7d6-c30f-43b8-ac8d-5931478b09f7)
 
 #### User Schema
 
 ![userschema.png]
+![userschema](https://github.com/farheen-syed1/NourishHerClient/assets/168995397/77266e8f-3871-4516-9127-c6780e209468)
 
 #### Recipe Schema
 
 ![recipeschema.png]
+![recipesschema](https://github.com/farheen-syed1/NourishHerClient/assets/168995397/57b942d5-d4b3-4ac1-94e5-11c1f670b9f5)
 
 #### Exercise Schema
 
-![exerciseschema]
+![exercisesche
+![exerciseschema](https://github.com/farheen-syed1/NourishHerClient/assets/168995397/570e3a47-289a-42ee-b056-78bfb2f3d2d3)
+ma]
 
 - User: { id, name, email, password, age, fitness_details }
 - Meal: { id, user_id, date, name, calories, protein, carbohydrates ,steps how to make it},
