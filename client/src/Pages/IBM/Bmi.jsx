@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Bmi.css';
 import Dumbbell from '../../assets/dumbell.png'
+import About from './About';
 
 export default function Bmi(){
   const [weight, setWeight] = useState('');
@@ -54,7 +55,8 @@ export default function Bmi(){
   }
 
   return(
-    <main className="bmi-calculator">
+    <main>
+    <div className="bmi-calculator">
       <div className="bmi-calculator__db">
       <img className="bmi-calculator__image" src="https://www.drjyotisingh.com/wp-content/uploads/2021/09/bck2.png" alt="dumb-bell" />
       </div>
@@ -90,9 +92,9 @@ export default function Bmi(){
       </div>
     
 
-      {/* <div className="bmi-calculator__db">
-      <img className="bmi-calculator__image" src={Dumbbell} alt="dumb-bell" />
-      </div> */}
+
+  </div>
+  <About/>
   </main>
   
   )

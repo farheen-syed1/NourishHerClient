@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Header.css';
 import { FaBars } from 'react-icons/fa'; 
 import logo from '../../assets/logo.png';
-
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -15,14 +15,14 @@ const Header = () => {
   return (
     <div className="navbar">
     <div className="navbar__logo">
-      <img src={logo} alt="Logo" /> {/* Replace with your logo */}
+    <Link  className="navbar__link" to="/">  <img src={logo} alt="Logo" /> </Link>
     </div>
     <div className={`navbar__menu ${isMenuOpen ? 'navbar__menu--open' : ''}`}>
       <ul className="navbar__list">
-        <li className="navbar__item navbar__item--active">Home</li>
+      <Link  className="navbar__link" to="/"><li className="navbar__item navbar__item--active">Home</li></Link>
         <li className="navbar__item">Exercise</li>
         <li className="navbar__item">Healthy Recipe</li>
-        <li className="navbar__item">BMI</li>
+        <Link  className="navbar__link" to="/bmi"> <li className="navbar__item" >BMI</li></Link>
       </ul>
     </div>
     <div className="navbar__buttons">

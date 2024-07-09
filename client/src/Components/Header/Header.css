@@ -110,6 +110,10 @@
   color: #237024;
 }
 
+.navbar__link{
+  text-decoration: none;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navbar__menu {
