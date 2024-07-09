@@ -41,7 +41,7 @@ They will use the app to:
 2. Backend: Express.js
 3. Database: MongoDB
 4. APIs: API for nutritional recipes and exercises
-5. Libraries: _JWT for authentication_ (nice to have)
+5. Libraries: _JWT for authentication_ (nice to have), react, cors
 
 ### APIs
 
@@ -74,28 +74,32 @@ API: To fetch nutritional food recipes and exercises:
 #### Exercise Page
 
 ![exercisepage.png]
+
 ![exercisepage](https://github.com/farheen-syed1/NourishHerClient/assets/168995397/eebe292a-c776-495c-83d4-039b8d82ba02)
 
 #### Footer
 
 ![footer.png]
+
 ![footer](https://github.com/farheen-syed1/NourishHerClient/assets/168995397/5db1b7d6-c30f-43b8-ac8d-5931478b09f7)
 
 #### User Schema
 
 ![userschema.png]
+
 ![userschema](https://github.com/farheen-syed1/NourishHerClient/assets/168995397/77266e8f-3871-4516-9127-c6780e209468)
 
 #### Recipe Schema
 
 ![recipeschema.png]
+
 ![recipesschema](https://github.com/farheen-syed1/NourishHerClient/assets/168995397/57b942d5-d4b3-4ac1-94e5-11c1f670b9f5)
 
 #### Exercise Schema
 
-![exercisesche
+![exerciseschema.png]
+
 ![exerciseschema](https://github.com/farheen-syed1/NourishHerClient/assets/168995397/570e3a47-289a-42ee-b056-78bfb2f3d2d3)
-ma]
 
 - User: { id, name, email, password, age, fitness_details }
 - Meal: { id, user_id, date, name, calories, protein, carbohydrates ,steps how to make it},
