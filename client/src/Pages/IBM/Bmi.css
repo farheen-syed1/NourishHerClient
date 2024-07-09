@@ -1,0 +1,86 @@
+.bmi-calculator {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.bmi-calculator__image{
+  width: 100%;
+ position: relative;
+}
+
+.bmi-calculator__from{
+  position: absolute;
+  z-index: 1;
+}
+
+.bmi-calculator__title {
+  color: #202020;
+  font-size: 50px;
+  text-align: center;
+}
+
+.bmi-calculator__description {
+  margin: 12px 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.bmi-calculator__input-area {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bmi-calculator__input {
+  background-color: #DCDCDC;
+  color: #202020;
+  font-size: 16px;
+  height: 46px;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+}
+
+.bmi-calculator__input::placeholder {
+  color: #202020;
+}
+
+.bmi-calculator__input:hover {
+  background-color: rgba(220, 220, 220, 0.8);
+}
+
+.bmi-calculator__button {
+  background-color: #0e8732;
+  color: white;
+  height: 46px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+}
+
+.bmi-calculator__button:hover {
+  background-color: rgba(26, 99, 224, 0.8);
+}
+
+.bmi-calculator__result {
+  color: #202020;
+  margin-top: 20px;
+}
+
+/* When the screen size is less than 500px */
+@media (max-width: 500px) {
+  .bmi-calculator__input-area {
+    width: 300px;
+  }
+}
