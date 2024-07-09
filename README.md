@@ -63,27 +63,27 @@ API: To fetch nutritional food recipes and exercises:
 
 #### Navbar
 
-![Navbar](https://github.com/farheen-syed1/NourishHer/assets/168995397/a811a9a4-c2d6-465c-857c-86245176f260)
+![Navbar.png]
 
 #### Home Page
 
-![landing page]
+![landingpage.png]
 
 #### Exercise Page
 
-![Exercise Page]
+![exercisepage.png]
 
 #### Footer
 
-![footer]
+![footer.png]
 
 #### User Schema
 
-![userschema]
+![userschema.png]
 
 #### Recipe Schema
 
-![recipeschema]
+![recipeschema.png]
 
 #### Exercise Schema
 
