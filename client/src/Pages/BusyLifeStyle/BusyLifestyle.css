@@ -30,6 +30,7 @@
 }
 
 .busylifestyle__content h6 {
+    font-family: "Avenir", "Times New Roman", Times, serif;
     font-size: 25px;
     font-weight: 600;
     line-height: 1.6em;
@@ -53,6 +54,7 @@
 
 
 .busylifestyle__heading-title {
+    font-family: "Avenir", "Times New Roman", Times, serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.6em;
@@ -62,6 +64,7 @@
 }
 
 .busylifestyle__text p {
+    font-family: "Avenir", "Times New Roman", Times, serif;
     font-size: 15px;
     font-weight: 500;
     line-height: 1.8rem;

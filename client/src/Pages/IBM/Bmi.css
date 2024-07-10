@@ -86,18 +86,21 @@
 
 }
 .bmi-calculator__about p{
+  font-family: "Avenir", "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: 500;
   color: #5f5e5e;
   padding: 0.3rem 0rem;
 }
 .bmi-calculator__about h4{
+  font-family: "Avenir", "Times New Roman", Times, serif;
   color: #202020;
   font-size: 30px;
   font-weight: 550;
   padding: 1rem 0rem;
 }
 .bmi-calculator__about ul{
+  font-family: "Avenir", "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: 500;
   color: #5f5e5e;
@@ -111,6 +114,7 @@
   padding: 0.3rem 0rem;
 }
 .bmi-calculator__span{
+  font-family: "Avenir", "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: 550;
   color: #5f5e5e;

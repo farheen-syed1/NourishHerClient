@@ -3,7 +3,8 @@ import Carousel from 'react-bootstrap/Carousel';
 import './Home.css'
 import ClientsList from '../Clients List/ClientsList';
 import BusyLifestyle from '../BusyLifeStyle/BusyLifestyle';
-
+import Help from '../Help/Help';
+import TestimonialSection from '../Testimonials/Testimonials';
 
 const Home = () => {
   return (
@@ -65,6 +66,8 @@ const Home = () => {
 
 <ClientsList/>
    <BusyLifestyle/>
+   <Help/>
+   <TestimonialSection/>
 
     </main>
   )

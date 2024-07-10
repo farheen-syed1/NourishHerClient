@@ -19,10 +19,12 @@ const Footer = () => {
         <div className='footer__main'>
             <div className='footer__section'>
                 <div className='footer__logo-container'>
-                    <img src={logo} alt="" className='footer__logo' />
+                    <img src={logo} alt="nourish-her-logo" className='footer__logo' />
                 </div>
                 <div className='footer__mission'>
-                    <p>Empowering web developers and small businesses, our mission is to simplify life. Leveraging cutting-edge technology, backed by 24/7 exceptional support.</p>
+                <p>We provide the science, structure and motivation so you achieve your goals and maintain them forever. You’re Not Alone…We’re Here to Help!
+                    </p>
+                
                 </div>
                 <div className='footer__social-media'>
                     <div className='footer__social-media-item'>
@@ -44,11 +46,11 @@ const Footer = () => {
                 <div className='footer__feature-item'>
                     <h6>Features</h6>
                     <ul>
-                        <li>Security & Technology</li>
-                        <li>Industry Leading Support</li>
-                        <li>Uptime Guarantee</li>
-                        <li>Server Locations</li>
-                        <li>Control Panel</li>
+                    <li>Home</li>
+                        <li>Exercise</li>
+                        <li> Healthy Recipe</li>
+                        <li>BMI Score</li>
+                        <li>Reviews</li>
                     </ul>
                 </div>
             </div>
