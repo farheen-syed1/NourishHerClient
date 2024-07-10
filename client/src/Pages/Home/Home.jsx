@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import './Home.css'
 import ClientsList from '../Clients List/ClientsList';
+import BusyLifestyle from '../BusyLifeStyle/BusyLifestyle';
 
 
 const Home = () => {
@@ -63,7 +64,7 @@ const Home = () => {
       </Carousel>
 
 <ClientsList/>
-   
+   <BusyLifestyle/>
 
     </main>
   )
