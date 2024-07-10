@@ -22,8 +22,7 @@ const Footer = () => {
                     <img src={logo} alt="" className='footer__logo' />
                 </div>
                 <div className='footer__mission'>
-                    <p>We provide the science, structure and motivation so you achieve your goals and maintain them forever. You’re Not Alone…We’re Here to Help!
-                    </p>
+                    <p>Empowering web developers and small businesses, our mission is to simplify life. Leveraging cutting-edge technology, backed by 24/7 exceptional support.</p>
                 </div>
                 <div className='footer__social-media'>
                     <div className='footer__social-media-item'>
@@ -45,11 +44,11 @@ const Footer = () => {
                 <div className='footer__feature-item'>
                     <h6>Features</h6>
                     <ul>
-                        <li>Home</li>
-                        <li>Exercise</li>
-                        <li> Healthy Recipe</li>
-                        <li>BMI Score</li>
-                        <li>Reviews</li>
+                        <li>Security & Technology</li>
+                        <li>Industry Leading Support</li>
+                        <li>Uptime Guarantee</li>
+                        <li>Server Locations</li>
+                        <li>Control Panel</li>
                     </ul>
                 </div>
             </div>

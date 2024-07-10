@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import './Home.css'
+import ClientsList from '../Clients List/ClientsList';
 
 
 const Home = () => {
@@ -61,11 +62,8 @@ const Home = () => {
         </Carousel.Item>
       </Carousel>
 
-      <section>
-
-
-      </section>
-
+<ClientsList/>
+   
 
     </main>
   )
