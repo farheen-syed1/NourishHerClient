@@ -20,7 +20,7 @@ const Header = () => {
     <div className={`navbar__menu ${isMenuOpen ? 'navbar__menu--open' : ''}`}>
       <ul className="navbar__list">
       <Link  className="navbar__link" to="/"><li className="navbar__item navbar__item--active">Home</li></Link>
-        <li className="navbar__item">Exercise</li>
+      <Link  className="navbar__link" to="/exercise"><li className="navbar__item">Exercise</li></Link>
         <li className="navbar__item">Healthy Recipe</li>
         <Link  className="navbar__link" to="/bmi"> <li className="navbar__item" >BMI</li></Link>
       </ul>

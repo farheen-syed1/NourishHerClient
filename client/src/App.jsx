@@ -6,7 +6,7 @@ import Home from './Pages/Home/Home'
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Header/Header';
 import Bmi from './Pages/IBM/Bmi';
-
+import Exercise from './Pages/Exercise/Exercise';
 
 
 
@@ -32,7 +32,7 @@ function App() {
       <Routes>
    
         <Route path="/" element={<Home/>} />
-        {/* <Route path="/exercise"
+        <Route path="/exercise"
           element={
             <Exercise
               exerciseDetails={exerciseDetails}
@@ -42,9 +42,9 @@ function App() {
           
             />
           }
-        /> */}
+        />
 
-        {/* <Route path="/exercise/:id"
+        <Route path="/exercise/:id"
           element={
             <Exercise
             exerciseDetails={exerciseDetails}
@@ -54,7 +54,7 @@ function App() {
             />
           }
         />
-
+ {/*
 <Route path="/health-recipes"
           element={
             <HealthRecipes
@@ -84,7 +84,7 @@ function App() {
         <Route path="/bmi" element={<Bmi/>} />
      
       </Routes>
-      <Footer />
+   
     </BrowserRouter>
 
 

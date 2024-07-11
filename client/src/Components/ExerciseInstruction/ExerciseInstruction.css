@@ -1,0 +1,218 @@
+.comments {
+    margin-top: 1rem;
+    border-bottom: 2px solid #E1E1E1;
+  }
+  .comments h5 {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #323232;
+  }
+  .comments__from {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .comments__from {
+      display: flex;
+      padding: 1rem 0rem;
+    }
+  }
+  .comments__from--avatar {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    background-image: url(../../assets/Images/Mohan-muruge.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 1.5rem;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .comments__from--avatar {
+      height: 36px;
+      width: 36px;
+      border-radius: 50%;
+      margin-top: 2.4rem;
+    }
+  }
+  .comments__from--convo--join {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .comments__from--convo--join--pic {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  .comments__from--convo--join--pic p {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #AFAFAF;
+    padding-bottom: 0.4rem;
+  }
+  .comments__from--convo--join--pic--submit {
+    display: flex;
+    gap: 0.9375rem;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .comments__from--convo--join--pic--submit {
+      flex-direction: column;
+      width: 22.5%;
+    }
+  }
+  .comments__from--convo--join--pic--submit--inputs {
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    padding: 0.625rem 1rem;
+    border: 1px solid #AFAFAF;
+    border-radius: 0.25rem;
+    width: 35vw;
+    background-color: #FAFAFA;
+  }
+  @media (max-width: 768px) and (max-width: 1279px) {
+    .comments__from--convo--join--pic--submit--inputs {
+      width: 100%;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .comments__from--convo--join--pic--submit--inputs {
+      width: 13.75rem;
+      height: 6.25rem;
+    }
+  }
+  .comments__from--convo--join--btn {
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #0095FF;
+    color: #FFFFFF;
+    padding: 0.4375em;
+    border-radius: 0.25em;
+    font-size: 0.875rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 9vw;
+    justify-content: space-evenly;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .comments__from--convo--join--btn {
+      width: 13.75rem;
+    }
+  }
+  
+  .newcomments {
+    display: flex;
+    margin-top: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+    border-bottom: 2px solid #E1E1E1;
+    width: 100%;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .newcomments {
+      margin-top: 0rem;
+      gap: 0.5rem;
+      padding: 0.5rem 0;
+    }
+  }
+  .newcomments__pic {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: #E1E1E1;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .newcomments__pic {
+      height: 2.25rem;
+      width: 2.25rem;
+    }
+  }
+  .newcomments__contents {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .newcomments__contents--namedate {
+    display: flex;
+    justify-content: space-between;
+  }
+  .newcomments__contents--namedate h5 {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+  }
+  .newcomments__contents--namedate--date {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #AFAFAF;
+  }
+  .newcomments__contents--namedate--text {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #323232;
+    margin-top: 0.625rem;
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    .comments__from {
+      display: flex;
+    }
+    .comments__from--convo--join--pic {
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+    .comments__from--convo--join--inputs {
+      height: 6.5625rem;
+      width: 100%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    .comments__from {
+      padding: 1rem 0rem;
+    }
+    .comments__from--avatar {
+      height: 36px;
+      width: 36px;
+      border-radius: 50%;
+      margin-top: 1.9375rem;
+    }
+    .comments__from--convo--join--pic--submit--add {
+      width: 31.25rem;
+    }
+    .comments__from--convo--join--inputs {
+      width: 100%;
+    }
+    .comments__from--convo--join--btn {
+      width: 20vw;
+    }
+    .newcomments {
+      width: 100%;
+      gap: 0.625rem;
+      padding: 1rem 0;
+    }
+    .newcomments__contents {
+      width: 90%;
+    }
+  }
