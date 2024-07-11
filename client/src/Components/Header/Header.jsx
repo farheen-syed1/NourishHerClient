@@ -3,6 +3,7 @@ import './Header.css';
 import { FaBars } from 'react-icons/fa'; 
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 
 const Header = () => {
@@ -11,6 +12,8 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+const location = useLocation()
 
   return (
     <div className="navbar">
@@ -21,7 +24,7 @@ const Header = () => {
       <ul className="navbar__list">
       <Link  className="navbar__link" to="/"><li className="navbar__item navbar__item--active">Home</li></Link>
       <Link  className="navbar__link" to="/exercise"><li className="navbar__item">Exercise</li></Link>
-        <li className="navbar__item">Healthy Recipe</li>
+      <Link  className="navbar__link" to="/health-recipes"> <li className="navbar__item">Healthy Recipe</li></Link>
         <Link  className="navbar__link" to="/bmi"> <li className="navbar__item" >BMI</li></Link>
       </ul>
     </div>

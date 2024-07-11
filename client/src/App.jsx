@@ -7,7 +7,7 @@ import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Header/Header';
 import Bmi from './Pages/IBM/Bmi';
 import Exercise from './Pages/Exercise/Exercise';
-
+import HealthRecipes from './Pages/Health-Recipes/HealthRecipes';
 
 
 function App() {
@@ -54,7 +54,7 @@ function App() {
             />
           }
         />
- {/*
+
 <Route path="/health-recipes"
           element={
             <HealthRecipes
@@ -67,7 +67,7 @@ function App() {
           }
         />
 
-        <Route path="/exercise/:id"
+        <Route path="/health-recipes/:id"
           element={
             <HealthRecipes
               recipeDetails={recipeDetails}
@@ -76,7 +76,7 @@ function App() {
               setRecipeData={setRecipeData}
             />
           }
-        /> */}
+        />
 
 
 
@@ -84,7 +84,7 @@ function App() {
         <Route path="/bmi" element={<Bmi/>} />
      
       </Routes>
-   
+   <Footer/>
     </BrowserRouter>
 
 

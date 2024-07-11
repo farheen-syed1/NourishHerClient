@@ -108,7 +108,7 @@ const Exercise = ({
   }, [id]);
 
   const handleChangeData = async (idData) => {
-    navigate(`/home/${idData}`);
+    navigate(`/exercise/${idData}`);
   };
 
 
@@ -119,8 +119,8 @@ const Exercise = ({
 
   return (
     <>
-    <main className="hero">
-      <figure className="hero__img">
+    <main className="exercise">
+      <figure className="exercise__img">
         <video controls poster={ exerciseDetails?.image}>
           <source src={ exerciseDetails?.video} type="video/mp4" />
           Your browser does not support the video tag.
@@ -129,8 +129,8 @@ const Exercise = ({
       
         {/* <img src={ exerciseDetails?.image} alt="img-loading" /> */}
       </figure>
-      <section className="hero__container">
-        <article className="hero__container--left">
+      <section className="exercise__container">
+        <article className="exercise__container--left">
           <h1>{ exerciseDetails?.title}</h1>
           <ExerciseDetails
             channel={ exerciseDetails?.channel}
@@ -151,7 +151,7 @@ const Exercise = ({
           />
         </article>
 
-        <aside className="hero__container--right">
+        <aside className="exercise__container--right">
           <NextExercise
             id={ exerciseDetails?.id}
             filteredData={exerciseData}
@@ -160,7 +160,7 @@ const Exercise = ({
         </aside>
       </section>
     </main>
-    <Footer/>
+  
     </>
   );
 };

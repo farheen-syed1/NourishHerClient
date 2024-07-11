@@ -1,9 +1,9 @@
 
-.hero {
+.exercise {
     width: 100%;
   
   }
-  .hero__img {
+  .exercise__img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,30 +13,30 @@
     flex-direction: column;
   }
   @media (max-width: 767px) {
-    .hero__img {
+    .exercise__img {
       margin-top: 1.563rem;
     }
   }
-  .hero__img video {
+  .exercise__img video {
     width: 70%;
   }
   @media (max-width: 767px) {
-    .hero__img video {
+    .exercise__img video {
       width: 100vw;
       height: 100%;
     }
   }
-  .hero__container {
+  .exercise__container {
     display: flex;
     padding: 0rem 7rem;
   }
   @media (max-width: 767px) {
-    .hero__container {
+    .exercise__container {
       flex-direction: column;
       padding: 1.25rem;
     }
   }
-  .hero__container h1 {
+  .exercise__container h1 {
     font-size: 2.0625rem;
     line-height: 2.75rem;
     font-family: "Avenir", "Times New Roman", Times, serif;
@@ -46,7 +46,7 @@
     padding-top: 1.5rem;
   }
   @media (max-width: 767px) {
-    .hero__container h1 {
+    .exercise__container h1 {
       font-size: 24px;
       line-height: 32px;
       border-bottom: 2px solid #E1E1E1;
@@ -54,34 +54,34 @@
       padding-top: 0rem;
     }
   }
-  .hero__container--left--author {
+  .exercise__container--left--author {
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
     border-bottom: 2px solid #E1E1E1;
     width: 100%;
   }
-  .hero__container--left--author img {
+  .exercise__container--left--author img {
     padding-right: 0.3125rem;
   }
   @media (max-width: 767px) {
-    .hero__container--left--author {
+    .exercise__container--left--author {
       gap: 0.625rem;
       padding-bottom: 1rem;
     }
   }
-  .hero__container--left--author--name {
+  .exercise__container--left--author--name {
     display: flex;
     width: 35%;
     gap: 1rem;
   }
   @media (max-width: 767px) {
-    .hero__container--left--author--name {
+    .exercise__container--left--author--name {
       width: 100%;
       flex-direction: column;
     }
   }
-  .hero__container--left--author--name h5 {
+  .exercise__container--left--author--name h5 {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-family: "Avenir", "Times New Roman", Times, serif;
@@ -89,7 +89,7 @@
     font-style: normal;
     color: #323232;
   }
-  .hero__container--left--author--name p {
+  .exercise__container--left--author--name p {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-family: "Avenir", "Times New Roman", Times, serif;
@@ -97,13 +97,13 @@
     font-style: normal;
     color: #AFAFAF;
   }
-  .hero__container--left--author--preview {
+  .exercise__container--left--author--preview {
     display: flex;
     gap: 1rem;
     align-items: center;
     margin-right: 1rem;
   }
-  .hero__container--left--author--preview span {
+  .exercise__container--left--author--preview span {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-family: "Avenir", "Times New Roman", Times, serif;
@@ -114,12 +114,12 @@
     align-items: center;
   }
   @media (max-width: 767px) {
-    .hero__container--left--author--preview {
+    .exercise__container--left--author--preview {
       width: 100%;
       flex-direction: column;
     }
   }
-  .hero__container--left--para {
+  .exercise__container--left--para {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-family: "Avenir", "Times New Roman", Times, serif;
@@ -128,43 +128,43 @@
     margin-top: 1rem;
   }
   @media (max-width: 767px) {
-    .hero__container--left--para {
+    .exercise__container--left--para {
       font-size: 13px;
       line-height: 18px;
     }
   }
   @media (min-width: 768px) and (max-width: 1279px) {
-    .hero {
+    .exercise {
       width: 100vw;
       height: 100vh;
     }
-    .hero__img {
+    .exercise__img {
       height: auto;
       width: 100%;
     }
-    .hero__img video {
+    .exercise__img video {
       width: 80%;
       height: 100%;
       -o-object-fit: cover;
          object-fit: cover;
     }
-    .hero__img--play {
+    .exercise__img--play {
       margin-top: 15.625rem;
     }
-    .hero__container {
+    .exercise__container {
       flex-direction: column;
       padding: 0 1.5rem;
     }
-    .hero__container h1 {
+    .exercise__container h1 {
       padding-top: 2.25rem;
     }
-    .hero__container--left {
+    .exercise__container--left {
       width: 100%;
     }
-    .hero__container--left--author {
+    .exercise__container--left--author {
       padding-top: 0.5rem;
     }
-    .hero__container--left--para {
+    .exercise__container--left--para {
       width: 100%;
       font-size: 0.875rem;
       line-height: 1.375rem;
