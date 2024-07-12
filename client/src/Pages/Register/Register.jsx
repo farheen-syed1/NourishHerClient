@@ -148,7 +148,7 @@ const Register = () => {
         </div>
         <div className='register__footer'>
             <span>Already have an account?</span>
-            <span onClick={() => navigate('/')}>register Here</span>
+            <span onClick={() => navigate('/login')}>login Here</span>
         </div>
     </div>
 </main>

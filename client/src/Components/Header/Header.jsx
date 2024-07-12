@@ -36,7 +36,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar__buttons">
-        <button className="navbar__button navbar__button--login">Login</button>
+      <Link  className="navbar__link" to="/login">    <button className="navbar__button navbar__button--login">Login</button></Link>
       <Link  className="navbar__link" to="/signUp">  <button className="navbar__button navbar__button--signup">Signup</button></Link>
       </div>
       <div className="navbar__hamburger-icon" onClick={toggleMenu}>
