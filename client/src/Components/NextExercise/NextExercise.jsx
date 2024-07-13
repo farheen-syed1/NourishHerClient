@@ -3,15 +3,15 @@ import "./NextExercise.css";
 
 const NextExercise = ({ id, handleChangeData, filteredData }) => {
   return (
-    <section className="nextvideo">
+    <section className="nextexercise">
       <h5>NEXT EXERCISE</h5>
       {filteredData
       .filter((e)=>e.id !== id)
       ?.map((Next, index) => {
         return (
-          <div className="nextvideo__card" key={index + 1}>
+          <div className="nextexercise__card" key={index + 1}>
             <div
-              className="nextvideo__card--image"
+              className="nextexercise__card--image"
               onClick={() => {
                 handleChangeData(Next.id);
               }}
@@ -19,11 +19,11 @@ const NextExercise = ({ id, handleChangeData, filteredData }) => {
               <img src={Next?.image} alt="next_video" />
            
             </div>
-            <div className="nextvideo__card--details">
-              <h4 className="nextvideo__card--details--title">{Next?.title}</h4>
-              <p className="nextvideo__card--details--author">
+            <div className="nextexercise__card--details">
+              <h4 className="nextexercise__card--details--title">{Next?.title}</h4>
+              {/* <p className="nextexercise__card--details--author">
                 {Next?.channel}
-              </p>
+              </p> */}
             </div>
           </div>
         );

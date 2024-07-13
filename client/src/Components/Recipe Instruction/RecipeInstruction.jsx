@@ -11,26 +11,26 @@ const RecipeInstruction = ({comments,setNewComments,
 
   return (
     <>
-      <div className="comments">
+      <div className="line">
        
       </div>
 
       {comments?.map((comment, index) => {
         return (
-          <section className="newcomments" key={index}>
+          <section className="recipe" key={index}>
          
-            <FcDebian className="newcomments__pic"></FcDebian>
-            <div className="newcomments__contents">
-              <div className="newcomments__contents--namedate">
-                <h5 className="newcomments__contents--namedate--author">
+            <FcDebian className="recipe__pic"></FcDebian>
+            <div className="recipe__contents">
+              <div className="recipe__contents--namedate">
+                <h5 className="recipe__contents--namedate--author">
                   {comment.name}
                 </h5>
-                {/* <p className="newcomments__contents--namedate--date">
+                {/* <p className="recipe__contents--namedate--date">
                   {convertDateformat(comment.timestamp)}
                 </p> */}
               </div>
 
-              <p className="newcomments__contents--namedate--text">
+              <p className="recipe__contents--namedate--text">
                 {comment.comment}
               </p>
             </div>

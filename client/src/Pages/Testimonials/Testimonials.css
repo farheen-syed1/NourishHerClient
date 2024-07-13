@@ -1,5 +1,6 @@
 .section-testimonial {
-    padding-bottom: 50px;
+
+    margin-bottom: 8%;
 }
 
 .common-heading {
@@ -31,11 +32,14 @@
 }
 
 .swiper-slide:hover {
-    background: #2b802d;
+    background: #a0da85;
 }
 
-.swiper-slide:hover .swiper-client-msg {
+.swiper-slide:hover .swiper-client-msg  {
     color: #fff;
+}
+.section-testimonial__client-details p:hover{
+    color: #fff; 
 }
 
 .swiper-client img {

@@ -3,6 +3,7 @@ import './BusyLifestyle.css'
 import { GiMeal } from "react-icons/gi";
 import img from '../../assets/icon.png';
 import img1 from '../../assets/icon1.png';
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,18 +13,18 @@ const BusyLifestyle = () => {
         <div className='busylifestyle__wrapper'>
             <div className='busylifestyle__container'>
                 <div className='busylifestyle__card'>
-                    <div className='busylifestyle__image-wrapper'>
+                    <Link to="/health-recipes" className='busylifestyle__image-wrapper'>
                         <img src={img} alt="" className='busylifestyle__image' />
-                    </div>
+                    </Link>
                     <div className='busylifestyle__content'>
                         <h6 className='busylifestyle__title'>Simple Meal Plans</h6>
                         <p className='busylifestyle__description'>Simple, healthy and innovative recipes according to your food preferences.</p>
                     </div>
                 </div>
                 <div className='busylifestyle__card'>
-                    <div className='busylifestyle__image-wrapper'>
+                    <Link to="/exercise" className='busylifestyle__image-wrapper'>
                         <img src={img1} alt="" className='busylifestyle__image' />
-                    </div>
+                    </Link>
                     <div className='busylifestyle__content'>
                         <h6 className='busylifestyle__title'>Diet Complemented with Exercise Plans</h6>
                         <p className='busylifestyle__description'>Exercise tips and videos are shared to help you burn those extra fats.</p>

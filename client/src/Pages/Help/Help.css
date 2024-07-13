@@ -54,14 +54,17 @@
 
 .help__card--primary {
     background-color: #efe9e9;
+    text-decoration: none;
 }
 
 .help__card--secondary {
     background-color: #d2d8d7;
+    text-decoration: none;
 }
 
 .help__card--tertiary {
     background-color: #d0c6bb;
+    text-decoration: none;
 }
 
 .help__card::before {
@@ -86,6 +89,7 @@
     box-sizing: border-box;
     border-radius: 6px;
 }
+
 
 .help__card:hover::before {
     opacity: 1;

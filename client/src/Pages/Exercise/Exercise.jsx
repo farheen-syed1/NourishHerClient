@@ -108,7 +108,7 @@ const Exercise = ({
   }, [id]);
 
   const handleChangeData = async (idData) => {
-    navigate(`/home/${idData}`);
+    navigate(`/exercise/${idData}`);
   };
 
 
@@ -119,22 +119,33 @@ const Exercise = ({
 
   return (
     <>
-    <main className="hero">
-      <figure className="hero__img">
-        <video controls poster={ exerciseDetails?.image}>
+    <main className="exercise">
+      <div className="exercise_upper">
+      <figure className="exercise__img">
+        <video  poster={ exerciseDetails?.image}>
           <source src={ exerciseDetails?.video} type="video/mp4" />
           Your browser does not support the video tag.
         </video> 
-        {/* <iframe src={ exerciseDetails?.video} width="381" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> */}
-      
-        {/* <img src={ exerciseDetails?.image} alt="img-loading" /> */}
+     
+    
       </figure>
-      <section className="hero__container">
-        <article className="hero__container--left">
+      <div className="exercise__container--right">
+          <NextExercise
+            id={ exerciseDetails?.id}
+            filteredData={exerciseData}
+            handleChangeData={handleChangeData}
+          />
+        </div>
+
+
+      </div>
+     
+      <section className="exercise__container">
+        <article className="exercise__container--left">
           <h1>{ exerciseDetails?.title}</h1>
           <ExerciseDetails
-            channel={ exerciseDetails?.channel}
-            timeStamp={ exerciseDetails?.timestamp}
+            channel={ exerciseDetails?.club}
+
             views={ exerciseDetails?.views}
             likes={ exerciseDetails?.likes}
             description={ exerciseDetails?.description}
@@ -151,16 +162,10 @@ const Exercise = ({
           />
         </article>
 
-        <aside className="hero__container--right">
-          <NextExercise
-            id={ exerciseDetails?.id}
-            filteredData={exerciseData}
-            handleChangeData={handleChangeData}
-          />
-        </aside>
+       
       </section>
     </main>
-    <Footer/>
+  
     </>
   );
 };
