@@ -1,5 +1,5 @@
 # NourishHer
-C:\Brain Station\nourishHer\client\src\assets\logo.png
+![logo](https://github.com/user-attachments/assets/20e88d9b-dc8b-4f52-ac70-4854e0e4d1d5)
 
 Weight Loss and Health Management Application!
 
