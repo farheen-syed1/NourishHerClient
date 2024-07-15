@@ -37,7 +37,14 @@ They will use the app to:
 - As a user, I want to be able to use a BMI calculator to monitor my health metrics and track my progress.
 
 ## Implementation
-
+- The file that is in the config.env.example transfer to your local repo .env file.
+- Download all node modules
+- Make a .env file in the backend
+- There is a config.env.example file. Copy that file and paste it in your .env file
+- run npm start on the back end
+- rum npm run dev on the front end
+- In case you are unable to connect to the database, you will have to go into mongoDB atlas and create a cluster
+  
 ### Tech Stack
 
 1. Frontend: React
