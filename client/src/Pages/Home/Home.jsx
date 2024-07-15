@@ -64,8 +64,9 @@ const Home = () => {
         </Carousel.Item>
       </Carousel>
 
-<ClientsList/>
+
    <BusyLifestyle/>
+   <ClientsList/>
    <Help/>
    <TestimonialSection/>
 

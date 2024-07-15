@@ -1,9 +1,8 @@
 
 import "./RecipeInstruction.css";
-import { FcDebian } from "react-icons/fc";
 import { PiCookingPotDuotone } from "react-icons/pi";
 
-const RecipeInstruction = ({comments,setNewComments,
+const RecipeInstruction = ({ingredients,setNewComments,
 }) => {
   const handlechangeComment = (e) => {
     setNewComments(e.target.value);
@@ -15,7 +14,7 @@ const RecipeInstruction = ({comments,setNewComments,
        
       </div>
 
-      {comments?.map((comment, index) => {
+      {ingredients?.map((ingredients, index) => {
         return (
           <section className="recipe" key={index}>
          
@@ -23,15 +22,13 @@ const RecipeInstruction = ({comments,setNewComments,
             <div className="recipe__contents">
               <div className="recipe__contents--namedate">
                 <h5 className="recipe__contents--namedate--author">
-                  {comment.name}
+                  {ingredients.name}
                 </h5>
-                {/* <p className="recipe__contents--namedate--date">
-                  {convertDateformat(comment.timestamp)}
-                </p> */}
+              
               </div>
 
               <p className="recipe__contents--namedate--text">
-                {comment.comment}
+                {ingredients.explain}
               </p>
             </div>
           </section>

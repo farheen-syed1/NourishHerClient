@@ -9,7 +9,7 @@
 }
 
 .tag-lines {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.767);
     width: fit-content;
     position: relative;
     bottom: 20%;
@@ -18,11 +18,17 @@
     padding: 10px;
     margin: 5px;
 }
+.tag-lines h3{
+    font-size: 2.3rem;
+} 
+.tag-lines p{
+    font-size: 1rem;
+}
 
 @media (max-width:320px) {
    
     .tag{
-        bottom: 0%;
+        bottom: -28%;
     }
     
 }

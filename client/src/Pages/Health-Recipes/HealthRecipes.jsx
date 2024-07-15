@@ -6,10 +6,7 @@ import RecipeInstruction from "../../Components/Recipe Instruction/RecipeInstruc
 import RecipeDetails from "../../Components/RecipeDetails/RecipeDetails.jsx";
 import NextRecipe from "../../Components/NextRecipe/NextRecipe.jsx";
 
-
-
 const HealthRecipes = ({
-
   recipeDetails,
   setRecipeDetails,
   recipeData,
@@ -19,15 +16,6 @@ const HealthRecipes = ({
   const navigate = useNavigate();
   const [newComment, setNewComment] = useState("");
   const [loading, setLoading] = useState(false);
-
-  const convertDateformat = (Eledate) => {
-    const timeStamp = new Date(Eledate);
-    return timeStamp.toLocaleDateString("en-Us", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-    });
-  };
 
   const getVideoDetails = async (id) => {
     try {
@@ -79,7 +67,7 @@ const HealthRecipes = ({
 
         setRecipeDetails(videoDetailsData);
         setRecipeData(datafilter);
-    
+
         console.log(
           nextVideo.filter((video) => video.id !== nextVideo[0].id),
           "nexttt"
@@ -108,55 +96,44 @@ const HealthRecipes = ({
     navigate(`/health-recipes/${idData}`);
   };
 
-
-
   if (loading) {
     return <div>Loading...</div>;
   }
 
   return (
     <main className="healthy">
-       <div className="exercise_upper">
-      <figure className="healthy__img">
-        <video  poster={ recipeDetails?.image}>
-          {/* <source src={ recipeDetails?.video} type="video/mp4" /> */}
-          Your browser does not support the video tag.
-        </video> 
-    
-      </figure>
+      <div className="exercise_upper">
+        <figure className="healthy__img">
+          <video poster={recipeDetails?.image}>
+            {/* <source src={ recipeDetails?.video} type="video/mp4" /> */}
+            Your browser does not support the video tag.
+          </video>
+        </figure>
 
-      <aside className="healthy__container--right">
+        <aside className="healthy__container--right">
           <NextRecipe
-            id={ recipeDetails?.id}
+            id={recipeDetails?.id}
             filteredData={recipeData}
             handleChangeData={handleChangeData}
           />
-        
         </aside>
-        </div>
+      </div>
       <section className="healthy__container">
         <article className="healthy__container--left">
-          <h1>{ recipeDetails?.title}</h1>
+          <h1>{recipeDetails?.title}</h1>
           <RecipeDetails
-            channel={ recipeDetails?.name}
-            timeStamp={ recipeDetails?.timestamp}
-            views={ recipeDetails?.views}
-            likes={ recipeDetails?.likes}
-            description={ recipeDetails?.description}
-          
+            channel={recipeDetails?.name}
+            views={recipeDetails?.times}
+            likes={recipeDetails?.likes}
+            description={recipeDetails?.description}
           />
-        
+
           <RecipeInstruction
-            comments={ recipeDetails?.comments}
-            convertDateformat={convertDateformat}
-          
+            ingredients={recipeDetails?.ingredients}
             newcomments={newComment}
             setNewComments={setNewComment}
           />
-        
         </article>
-
-      
       </section>
     </main>
   );

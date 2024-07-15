@@ -4,7 +4,7 @@ import { FcDebian } from "react-icons/fc";
 
 
 
-const ExerciseInstruction = ({comments,setNewComments,
+const ExerciseInstruction = ({instructions,setNewComments,
 }) => {
   const handlechangeComment = (e) => {
     setNewComments(e.target.value);
@@ -16,7 +16,7 @@ const ExerciseInstruction = ({comments,setNewComments,
        
       </div>
 
-      {comments?.map((comment, index) => {
+      {instructions?.map((instruction, index) => {
         return (
           <section className="newcomments" key={index}>
     
@@ -25,15 +25,13 @@ const ExerciseInstruction = ({comments,setNewComments,
             <div className="newcomments__contents">
               <div className="newcomments__contents--namedate">
                 <h5 className="newcomments__contents--namedate--author">
-                  {comment.name}
+                  {instruction.name}
                 </h5>
-                {/* <p className="newcomments__contents--namedate--date">
-                  {convertDateformat(comment.timestamp)}
-                </p> */}
+              
               </div>
 
               <p className="newcomments__contents--namedate--text">
-                {comment.comment}
+                {instruction.guide}
               </p>
             </div>
           </section>
