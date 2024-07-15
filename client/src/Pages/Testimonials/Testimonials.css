@@ -1,0 +1,124 @@
+.section-testimonial {
+
+    margin-bottom: 8%;
+}
+
+.common-heading {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.6em;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.swiper {
+    padding: 20px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.swiper-slide {
+    margin-right: 44px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.swiper-slide:hover {
+    background: #a0da85;
+}
+
+.swiper-slide:hover .swiper-client-msg  {
+    color: #fff;
+}
+.section-testimonial__client-details p:hover{
+    color: #fff; 
+}
+
+.swiper-client img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2b802d;
+}
+
+.swiper-client-msg {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6em;
+    color: #666;
+    margin: 0;
+    text-align: center;
+}
+
+.client-data-details {
+    margin-top: 30px;
+}
+
+.client-data-details p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6em;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.client-data-details p:first-child {
+    font-weight: bold;
+}
+
+.swiper-pagination-bullet {
+    background: #333 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #2b802d !important;
+}
+
+@media (max-width: 768px) {
+    .swiper-client {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .swiper-client img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .client-data-details p {
+        font-size: 0.9em;
+    }
+
+    .swiper-client-msg {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .common-heading {
+        font-size: 2em;
+    }
+
+    .swiper-client-msg {
+        font-size: 0.8em;
+    }
+
+    .client-data-details p {
+        font-size: 0.8em;
+    }
+
+    .swiper-client-data img {
+        width: 50px;
+        height: 50px;
+    }
+}

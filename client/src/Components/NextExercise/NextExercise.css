@@ -1,0 +1,116 @@
+.nextexercise {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    border-left: 2px solid #E1E1E1;
+   height: 790px;
+   margin-top: 5rem;
+   background-color: black;
+  }
+  .nextexercise h5 {
+    padding-top: 1rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #bebebe;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .nextexercise {
+      padding: 0rem;
+      border-left: none;
+    }
+  }
+  @media (max-width: 768px) and (max-width: 1279px) {
+    .nextexercise {
+      height: 0px;
+      margin-top: 5rem;
+      border-left: none;
+    }
+  }
+  .nextexercise__card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .nextexercise__card {
+      width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    .nextexercise__card {
+      width: 80%;
+    }
+  }
+  @media (min-width: 1280px) {
+    .nextexercise__card {
+      width: 100%;
+    }
+  }
+  .nextexercise__card--image {
+    width: 25%;
+    border-radius: 0.5rem;
+  }
+  .nextexercise__card--image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.313rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .nextexercise__card--details {
+    width: 55%;
+    margin-left: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+  @media (max-width: 768px) and (max-width: 1279px) {
+    .nextexercise__card--details {
+      gap: 0.9rem;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .nextexercise__card--details {
+      gap: 1.5rem;
+    }
+  }
+  .nextexercise__card--details--title {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    color: #c4c3c3;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .nextexercise__card--details--title {
+      font-size: 13px;
+      line-height: 18px;
+      font-family: "Avenir", "Times New Roman", Times, serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+  }
+  .nextexercise__card--details--author {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #323232;
+    margin: 0.313rem 0 0 0;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .nextexercise__card--details--author {
+      font-size: 13px;
+      line-height: 18px;
+      font-family: "Avenir", "Times New Roman", Times, serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }

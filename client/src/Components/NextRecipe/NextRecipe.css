@@ -1,0 +1,111 @@
+.nextrecipe {
+    padding: 1rem;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    border-left: 2px solid #E1E1E1;
+  }
+  .nextrecipe h5 {
+    padding-top: 1rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #AFAFAF;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .nextrecipe {
+      padding: 0rem;
+      border-left: none;
+    }
+  }
+  @media (max-width: 768px) and (max-width: 1279px) {
+    .nextrecipe {
+      border-left: none;
+      padding-left: 1rem;
+    }
+  }
+  .nextrecipe__card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .nextrecipe__card {
+      width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    .nextrecipe__card {
+      width: 80%;
+    }
+  }
+  @media (min-width: 1280px) {
+    .nextrecipe__card {
+      width: 70%;
+    }
+  }
+  .nextrecipe__card--image {
+    width: 30%;
+    border-radius: 0.5rem;
+  }
+  .nextrecipe__card--image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.313rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .nextrecipe__card--details {
+    width: 55%;
+    margin-left: 2.625rem;
+  
+  }
+  @media (max-width: 768px) and (max-width: 1279px) {
+    .nextrecipe__card--details {
+      gap: 0.9rem;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .nextrecipe__card--details {
+      gap: 1.5rem;
+    }
+  }
+  .nextrecipe__card--details--title {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    color: rgb(196, 193, 193);
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .nextrecipe__card--details--title {
+      font-size: 13px;
+      line-height: 18px;
+      font-family: "Avenir", "Times New Roman", Times, serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+  }
+  .nextrecipe__card--details--author {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #323232;
+    margin: 0.313rem 0 0 0;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .nextrecipe__card--details--author {
+      font-size: 13px;
+      line-height: 18px;
+      font-family: "Avenir", "Times New Roman", Times, serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }

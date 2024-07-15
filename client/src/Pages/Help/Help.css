@@ -1,0 +1,172 @@
+.help {
+    margin-top: 20px;
+    padding-top: 83px !important;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+
+.help__title {
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.6em;
+    color: #000000;
+    text-align: center;
+}
+
+.help__content {
+    background-image: url(../../assets/bg.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-top: 30px;
+}
+
+.help__row {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.help__card {
+    width: 31.3333%;
+    height: auto;
+    margin-right: 3%;
+    padding-top: 54px;
+    padding-right: 40px !important;
+    padding-bottom: 40px !important;
+    padding-left: 40px !important;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.help__card--primary {
+    background-color: #efe9e9;
+    text-decoration: none;
+}
+
+.help__card--secondary {
+    background-color: #d2d8d7;
+    text-decoration: none;
+}
+
+.help__card--tertiary {
+    background-color: #d0c6bb;
+    text-decoration: none;
+}
+
+.help__card::before {
+    content: "Know More";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+
+.help__card:hover::before {
+    opacity: 1;
+}
+
+.help__image-wrapper {
+    text-align: center;
+}
+
+
+
+.help__details {
+    padding-top: 50px;
+}
+
+
+
+.help__subtitle {
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.6em;
+    color: #353535 !important;
+    text-align: center;
+}
+
+
+
+.help__description {
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6em;
+    color: #353535 !important;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .help__title {
+        font-size: 25px;
+    }
+
+    .help__row {
+        flex-direction: column;
+    }
+
+    .help__card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    .help__row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .help__subtitle {
+        font-size: 20px;
+    }
+
+    .help__card {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .help__image {
+        width: 50px;
+    }
+
+    .help__subtitle {
+        font-size: 18px;
+    }
+
+    .help__description {
+        font-size: 12px;
+    }
+}

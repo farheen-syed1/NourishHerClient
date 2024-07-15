@@ -1,0 +1,152 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar__logo img {
+  height: 40px; 
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navbar__menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar__item {
+  margin: 0 20px;
+  color: grey;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar__item:hover,
+.navbar__item--active {
+  color: #2b802d;
+}
+
+.navbar__item:hover::after,
+.navbar__item--active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #2b802d;
+  bottom: -5px;
+  left: 0;
+}
+
+.navbar__buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__button--login {
+  width: auto;
+  height: auto;
+  background-color: #2b802d;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 10px 15px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar__button--login:hover {
+  background-color: #237024;
+  transform: scale(1.05);
+}
+
+.navbar__button--signup {
+  width: auto;
+  height: auto;
+  border: 1px solid #2b802d;
+  background-color: transparent;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #2b802d;
+  margin: 0;
+  padding: 10px 15px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar__button--signup:hover {
+  background-color: #2b802d;
+  color: #FFFFFF;
+  transform: scale(1.05);
+}
+
+.navbar__hamburger-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #237024;
+}
+
+.navbar__link{
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .navbar__menu--open {
+    display: flex;
+  }
+
+  .navbar__menu ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .navbar__item {
+    margin: 10px 0;
+  }
+
+  .navbar__buttons {
+    margin-top: 20px;
+  }
+
+  .navbar__hamburger-icon {
+    display: block;
+  }
+}

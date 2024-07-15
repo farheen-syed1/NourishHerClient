@@ -1,0 +1,143 @@
+.busylifestyle {
+    width: 80%;
+    max-width: 1001px;
+    margin: auto;
+    margin-top: 6rem;
+  
+}
+
+.busylifestyle__wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+
+
+.busylifestyle__card {
+    box-shadow: 0px 10px 60px 0px rgba(1, 33, 92, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin-bottom: 8.696%;
+}
+
+
+
+.busylifestyle__image {
+    width: 100px;
+}
+
+.busylifestyle__content h6 {
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.6em;
+    color: #2b2a2a;
+    margin: 0;
+}
+
+.busylifestyle__content p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #494949;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.busylifestyle__main {
+    width: 75%;
+}
+
+
+
+.busylifestyle__heading-title {
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.6em;
+    margin: 0;
+    padding-bottom: 10px;
+    color: #2b2a2a;
+}
+
+.busylifestyle__text p {
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #494949;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+/* Media Query for screen sizes with max-width 768px */
+@media (max-width: 768px) {
+    .busylifestyle__wrapper {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 3rem;
+    }
+
+    .busylifestyle__main {
+        width: 100%;
+    }
+
+    .busylifestyle__card {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .busylifestyle__content h6 {
+        font-size: 22px;
+    }
+
+    .busylifestyle__content p, .busylifestyle__text p {
+        font-size: 14px;
+    }
+
+    .busylifestyle__heading-title {
+        font-size: 28px;
+    }
+}
+
+/* Media Query for screen sizes with max-width 520px */
+@media (max-width: 520px) {
+    .busylifestyle__wrapper {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 3rem;
+    }
+
+    .busylifestyle__content h6 {
+        font-size: 20px;
+    }
+
+    .busylifestyle__main {
+        width: 100%;
+    }
+
+    .busylifestyle__card {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .busylifestyle__image {
+        width: 50px;
+    }
+
+    .busylifestyle__content h6 {
+        font-size: 18px;
+    }
+
+    .busylifestyle__content p, .busylifestyle__text p {
+        font-size: 12px;
+    }
+
+    .busylifestyle__heading-title {
+        font-size: 20px;
+    }
+}

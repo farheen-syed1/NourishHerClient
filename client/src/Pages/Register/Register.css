@@ -1,0 +1,270 @@
+.register {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+/* Left side */
+
+.register__content {
+  width: 50%;
+  height: 100vh;
+  background-color: #d4f7ad;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  margin-left: 5%;
+}
+
+.register__image {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.register__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.register__intro {
+  margin-top: 40px;
+}
+
+.register__intro h3 {
+  font-family: "Avenir", "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 25.26px;
+  color: #2b802d;
+  line-height: 58.34px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.register__intro p {
+  font-family: "Avenir", "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 16.09px;
+  color: #2b802d;
+  line-height: 22.13px;
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+/* Right side */
+
+.register__form {
+  width: 60%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.register__header p {
+  font-family: "Avenir", "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 32.19px;
+  color: #2b802d;
+  line-height: 40.56px;
+  margin: 0;
+}
+
+.register__header h5 {
+  font-family: "Avenir", "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 16.09px;
+  color: #45a347;
+  line-height: 20.28px;
+}
+
+.register__field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.register__field input,
+.register__field select {
+  width: 450px;
+  border: none;
+  border-bottom: 1px solid #45a347;
+  height: 47px;
+  margin-top: 20px;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: #414143;
+  line-height: 40px;
+}
+
+.register__field input::placeholder {
+  font-family: "Avenir", "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 14.08px;
+  color: #45a347;
+  line-height: 17.74px;
+}
+
+.register__field label {
+  font-family: "Avenir", "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 16.09px;
+  color: #248026;
+  line-height: 22.13px;
+  margin: 0;
+}
+
+.register__password-wrapper {
+  position: relative;
+}
+
+.register__password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.register__submit {
+  margin-top: 30px;
+}
+
+.register__submit button {
+  width: 450px;
+  height: 48.28px;
+  border: none;
+  outline: none;
+  border-radius: 24.14px;
+  font-weight: 500;
+  font-size: 16.09px;
+  line-height: 16.09px;
+  color: #ffffff;
+  letter-spacing: 1%;
+  cursor: pointer;
+  background-color: #2b802d;
+  transition: background-color 0.3s ease; /* Added background-color transition */
+}
+
+.register__submit button:hover {
+  background-color: rgb(74, 185, 74);
+  box-shadow: 0 0 20px rgba(29, 3, 3, 0.3);
+}
+
+.register__footer {
+  margin-top: 20px;
+}
+
+.register__footer span:nth-child(1) {
+  font-family: "Avenir", "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 16.09px;
+  color: #0a0a0c;
+  line-height: 20.28px;
+  cursor: pointer;
+}
+
+.register__footer span:nth-child(2) {
+  font-family: "Avenir", "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 16.09px;
+  color: #2b802d;
+  line-height: 20.28px;
+  cursor: pointer;
+}
+
+.register__error {
+  font-family: "Avenir", "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 16.09px;
+  color: rgb(9, 143, 21);
+  line-height: 20.28px;
+  cursor: pointer;
+}
+
+ @media  (max-width:768px){
+
+  .register{
+ margin-top: 9rem;
+    width: 100%;
+    height: auto;
+  }
+  .register__form {
+    width: 50%;
+  }
+
+  .register__field input,
+.register__field select {
+  width: 220px;}
+
+  .register__content {
+    width: 50%;
+
+  }
+  .register__submit button {
+    width: 220px;}
+
+    .register__intro {
+      margin-top: 1rem;
+  }
+  .register__intro h3 {
+    line-height: 2rem;
+  }
+} 
+
+
+
+@media screen  and (max-width:320px){
+  .register{
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .register__form{
+    width: 100%;
+    padding-top: 3rem;
+  }
+
+  .register__field input,
+  .register__field select {
+    width: 220px;}
+
+    .register__submit button{
+      width: 220px;
+    }
+    .register__image {
+      margin-top: 2rem;
+    }
+    .register__intro {
+      margin-top: 1rem;
+    }
+    .register__intro h3 {
+  line-height: 2rem;
+    }
+
+    .register__content{
+      width: 90%;
+    }
+    .register__image {
+      width: 250px;
+      height: 250px;}
+}

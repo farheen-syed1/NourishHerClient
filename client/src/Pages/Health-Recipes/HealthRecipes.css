@@ -1,0 +1,197 @@
+
+.healthy {
+    width: 100%;
+  
+  }
+  .healthy__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #000000;
+    position: relative;
+    flex-direction: column;
+  }
+  .healthy__container--right{
+    width: 50%;
+    background-color: #000000;
+    padding-top: 5rem;
+   padding-bottom: 3rem;
+  }
+
+  @media (max-width:320px) {
+    .healthy__img {
+      width: 100%;
+      margin-top: 5rem;
+    }
+    .healthy__container--right{
+      width: 100%;
+      padding-left: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    
+  }
+  @media (max-width: 767px) {
+    .healthy__img {
+      margin-top: 5.563rem;
+    }
+  }
+  .healthy__img video {
+    width: 70%;
+  }
+  @media (max-width: 767px) {
+    .healthy__img video {
+      width: 100%;
+      height: 80vh;
+    }
+  }
+  .healthy__container {
+    display: flex;
+    padding: 0rem 7rem;
+  }
+  @media (max-width: 767px) {
+    .healthy__container {
+      flex-direction: column;
+      padding: 1.25rem;
+    }
+  }
+  .healthy__container h1 {
+    font-size: 2.0625rem;
+    line-height: 2.75rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #323232;
+    padding-top: 1.5rem;
+  }
+  @media (max-width: 767px) {
+    .healthy__container h1 {
+      font-size: 24px;
+      line-height: 32px;
+      border-bottom: 2px solid #E1E1E1;
+      padding-bottom: 1rem;
+      padding-top: 0rem;
+    }
+  }
+  .healthy__container--left--author {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-bottom: 2px solid #E1E1E1;
+    width: 100%;
+  }
+  .healthy__container--left--author img {
+    padding-right: 0.3125rem;
+  }
+  @media (max-width: 767px) {
+    .healthy__container--left--author {
+      gap: 0.625rem;
+      padding-bottom: 1rem;
+    }
+  }
+  .healthy__container--left--author--name {
+    display: flex;
+    width: 35%;
+    gap: 1rem;
+  }
+  @media (max-width: 767px) {
+    .healthy__container--left--author--name {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  .healthy__container--left--author--name h5 {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #323232;
+  }
+  .healthy__container--left--author--name p {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #AFAFAF;
+  }
+  .healthy__container--left--author--preview {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  .healthy__container--left--author--preview span {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #AFAFAF;
+    display: flex;
+    align-items: center;
+  }
+ 
+  .healthy__container--left--para {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: "Avenir", "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 1rem;
+  }
+  @media (max-width: 767px) {
+    .healthy__container--left--para {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    .healthy {
+      width: 100vw;
+    
+    }
+    .healthy__img {
+      height: auto;
+      /* width: 100%; */
+    }
+    .healthy__img video {
+      width: 80%;
+      /* height: 100%; */
+      -o-object-fit: cover;
+         object-fit: cover;
+    }
+    .healthy__img--play {
+      margin-top: 15.625rem;
+    }
+    .healthy__container {
+      flex-direction: column;
+      padding: 0 1.5rem;
+    }
+    .healthy__container h1 {
+      padding-top: 2.25rem;
+    }
+    .healthy__container--left {
+      width: 100%;
+    }
+    .healthy__container--left--author {
+      padding-top: 0.5rem;
+    }
+    .healthy__container--left--para {
+      width: 100%;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
+  }
+
+
+
+
+  @media (max-width: 767px) {
+    .hero__container--left--author--preview {
+        width: 100%;
+        flex-direction: row;
+    }
+}
