@@ -23,7 +23,7 @@
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
-    background-color: #E1E1E1;
+
     background-position: center;
     background-size: cover;
   }
@@ -43,7 +43,7 @@
     justify-content: space-between;
   }
   .recipe__contents--namedate h5 {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     line-height: 1.375rem;
     font-family: "Avenir", "Times New Roman", Times, serif;
     font-weight: 600;

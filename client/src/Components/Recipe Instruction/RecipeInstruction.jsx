@@ -1,7 +1,7 @@
 
 import "./RecipeInstruction.css";
 import { FcDebian } from "react-icons/fc";
-
+import { PiCookingPotDuotone } from "react-icons/pi";
 
 const RecipeInstruction = ({comments,setNewComments,
 }) => {
@@ -19,7 +19,7 @@ const RecipeInstruction = ({comments,setNewComments,
         return (
           <section className="recipe" key={index}>
          
-            <FcDebian className="recipe__pic"></FcDebian>
+            <PiCookingPotDuotone className="recipe__pic"></PiCookingPotDuotone>
             <div className="recipe__contents">
               <div className="recipe__contents--namedate">
                 <h5 className="recipe__contents--namedate--author">

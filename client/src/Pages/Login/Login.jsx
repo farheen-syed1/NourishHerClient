@@ -26,26 +26,30 @@ const Login = () => {
                 toast.error('Please input your email!');
                 return;
             }
-
+    
             if (!password) {
                 toast.error('Password is required.');
                 return;
             }
-
+    
             const response = await axios.post('http://localhost:8080/login', {
                 email: email,
                 password: password
             });
-
+    
             const { token, role } = response.data;
             localStorage.setItem('token', token);
             localStorage.setItem('role', role);
             toast.success("Login successfully");
             navigate('/');
         } catch (error) {
-            console.error('Error:', error.message);
-            if (error.response && error.response.data && error.response.data.message === 'user not found ! not registered') {
-                toast.error('Invalid email/password');
+            console.log('Error:', error.message);
+            if (error.response && error.response.data && error.response.data.message) {
+                if (error.response.data.message === 'User not found') {
+                    toast.error('Invalid email/password');
+                } else {
+                    toast.error(error.response.data.message);
+                }
             } else {
                 toast.error('Something went wrong. Please try again.');
             }

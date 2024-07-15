@@ -3,6 +3,7 @@ import "./ExerciseInstruction.css";
 import { FcDebian } from "react-icons/fc";
 
 
+
 const ExerciseInstruction = ({comments,setNewComments,
 }) => {
   const handlechangeComment = (e) => {
@@ -18,6 +19,7 @@ const ExerciseInstruction = ({comments,setNewComments,
       {comments?.map((comment, index) => {
         return (
           <section className="newcomments" key={index}>
+    
          
             <FcDebian className="newcomments__pic"></FcDebian>
             <div className="newcomments__contents">

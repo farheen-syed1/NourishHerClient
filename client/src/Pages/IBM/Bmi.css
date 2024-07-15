@@ -12,7 +12,8 @@
  position: relative;
 }
 
-.bmi-calculator__from{
+
+.bmi-calculator__form{
   position: absolute;
   z-index: 1;
 }
@@ -70,7 +71,7 @@
 }
 
 .bmi-calculator__button:hover {
-  background-color: rgba(26, 99, 224, 0.8);
+  background-color: rgba(91, 175, 12, 0.8);
 }
 
 .bmi-calculator__result {
